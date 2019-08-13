@@ -1,0 +1,961 @@
+/*
+Theme Name: CFLC
+Description: A theme for Colorado Family Life Center.
+Version: 1.00
+Author: Jarred Dotterer
+*/
+
+/*--- RESET ---*/
+/*--- FLUID GRID STYLES ---*/
+/*--- GENERAL STYLES ---*/
+/*--- LAYOUT ---*/
+/*--- HEADER AND NAV ---*/
+/*--- FOOTER ---*/
+/*--- ABOUT US STYLES ---*/
+/*--- DONATE STYLES ---*/
+/*--- GET HELP STYLES ---*/
+
+/* ------------BEGIN RESET -------------*/
+
+/* General Demo Style */
+
+html { height: 100%; }
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+a img {
+	border: none;
+}
+
+body {
+    font: normal 100% "myriad-pro", sans-serif;
+    background: #E8EBDD;
+    color: #191A18;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+a {
+	color: #EE5F00; /*#7A21C7:Purple*/
+	text-decoration: none;
+}
+
+a:hover {
+	color: #FD6C0B;
+}
+
+.container {
+	width: 100%;
+	position: relative;
+}
+
+.container > header {
+	width: 90%;
+	max-width: 1240px;
+	margin: 0 auto;
+	position: relative;
+	padding: 0 30px 50px 30px;
+}
+
+.container > header {
+	padding: 60px 30px 50px;
+	text-align: center;
+}
+
+.container > header h1 {
+	font-size: 34px;
+	line-height: 38px;
+	margin: 0 auto;
+	font-weight: 700;
+	color: #333;
+}
+
+.container > header h1 span {
+	display: block;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* ------------END RESET -------------*/
+
+/* CFLC Styles - Ryan added */
+.pad10{padding-left: 10px; padding-right: 10px;}
+.content ul {
+	margin-left: 20px;
+	padding: 0 0 0px 178px;
+}
+.content li {
+	list-style: disc;
+	color: #39651A;
+	list-style-position: outside;
+	margin-left: 15px;
+	font-size: .875em; /* 14px / 16px = .875em */
+	line-height: 1.2857em; /* 14px * 1.2em = 18px */
+	margin-bottom: 0;
+}
+.content li {
+	color: #000;
+}
+
+/*--- FLUID GRID WIDTHS ---*/
+.row {
+	margin-right: -9px;
+	margin-left: -9px;
+}
+.half {
+	width: 50%;
+	float: left;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.quarter {
+	width: 25%;
+	float: left;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.three-quarters {
+	width: 75%;
+	float: left;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.third {
+	width: 33.33333%;
+	float: left;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.two-thirds {
+	width: 66.66666%;
+	float: left;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.fifth {
+	width: 20%;
+	float: left;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+.four-fifths {
+	width: 80%;
+	float: left;
+	padding-left: 9px;
+	padding-right: 9px;
+}
+
+/*--- END GRID STYLES ---*/
+
+
+
+
+/* ------------BEGIN GENERAL STYLES -------------*/
+
+h1 {
+	font: bold 2.5em "myriad-pro",sans-serif; /* 46px / 16px = 2.25em */
+	color: #5E0A00;
+	border-bottom: solid 1px #CCC;
+	border-top: solid 1px #CCC;
+	padding: 2px 0 3px 0;
+	margin: 0 0 25px 0;
+}
+h2 {
+	font: bold 1.25em "myriad-pro",sans-serif; /* 24px / 16px = 1.5em */
+	line-height: 1.125em;
+	color: #628D2C;
+	display: block;
+	margin: 0 0 18px 0;
+}
+h3 {
+	font: bold 1.125em "myriad-pro",sans-serif; /* 20px / 16px = 1.25em */
+	line-height: 1em;
+	color: #39651A;
+	margin-bottom: 16px;
+}
+h4 {
+	font: bold 1em "myriad-pro",sans-serif; /* 16px / 16px = 1em */
+	line-height: 1.125em;
+	color: #5E0A00;
+	margin-bottom: 14px;	
+}
+p {
+	font-size: 1em; /* 16px */
+	line-height: 1.125em; /* 16px * 1.125em = 18px */
+	font: 1em normal chaparral-pro;
+	margin: 0 0 1em 0;
+}
+blockquote {
+	color: #39651A;
+	font-size: 1.5em;
+	line-height: 1.5em;
+	clear: right;
+}
+blockquote > p{
+	line-height: 1.5em;
+}
+blockquote > cite{
+	color: #000;
+	font-style: italic;
+	float: right;
+	font-size: 16px;
+	margin: -20px 0 18px 0;
+}
+blockquote > p::before{
+	content: "\201C";
+	color: #5E0A00;
+	display: inline;
+	font-size: 80px;
+	line-height: 0em;
+	position: relative;
+	bottom: -30px;
+	right: 10px;
+}
+blockquote > p::after{
+	content: "\201D";
+	color: #5E0A00;
+	display: inline;
+	font-size: 80px;
+	line-height: 0em;
+	position: relative;
+	bottom: -30px;
+	left: 10px;
+}
+
+
+#classesinfo blockquote .cite {
+	font-size: 1em;
+	margin: 0 0 18px 0;
+}
+cite {
+	color: #000;
+	font-style: italic;
+}
+.first {
+	background-position: 0 6px;
+	background-image: url(images/openquote.png);
+	background-repeat: no-repeat;
+	text-indent: 24px;
+}
+.lastword {
+	background-image: url(images/closequote.png);
+	background-repeat: no-repeat;
+	background-position: right;
+	padding: 0 24px 0 0;
+}
+
+.imgright {
+	float: right;
+	margin: 0 0 36px 25px;
+}
+
+.clearboth {
+	clear: both;
+}
+
+.large {
+	font-size: 1.25em;
+	line-height: 1.35em;
+	padding: 0 0 0 0;
+	clear: both;
+}
+
+.divider-line {
+	border-bottom: solid 1px #CCC;
+	margin-bottom: 18px;
+}
+
+.img-bottom-margin {
+	margin-bottom: 18px;
+}
+
+.img-full-width {
+	width: 100%;
+}
+
+.img-centered {
+	max-width: 30%;
+    margin: 0 auto 18px;
+    display: block;
+}
+
+.no-margin-bottom {
+	margin-bottom: 0;
+}
+
+/* ------------END GENERAL STYLES -------------*/
+
+
+/* ------------BEGIN LAYOUT -------------*/
+.content {
+	background-image: url(images/background.gif);
+	overflow: hidden;
+	clear: both;
+	
+}
+
+.content .wrap {
+	margin:0 auto;
+    width:100%;
+    max-width: 1000px;
+	background-color: #F3F1E0;
+	padding: 60px 10px 40px;
+	min-height: 700px;
+}
+
+.content .wrap, .subfooter .wrap {
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.66);
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.66);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.66);
+}
+
+.darkTanBox {
+	background: #EBE8CB;
+	padding: 15px 18px;
+	border-radius: 8px;
+	margin: 0 0 18px 0;
+}
+
+.smallLeftRightMargin {
+	margin-left: 9px;
+	margin-right: 9px;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+
+/* ------------END LAYOUT -------------*/
+
+
+
+
+/* ------------BEGIN HEADER AND NAV-------------*/
+
+#logo a, #logotext a {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;	
+}
+
+#logo {
+	position: absolute;
+	top: 5px;
+	z-index: 5;
+	height: 105px;
+}
+
+#logo a {
+	width: 105px;
+	height: 105px;
+	background-image: url(images/logo.png);
+}
+
+#logotext {
+	position: absolute;
+	top: 72px;
+	left: 103px;
+	z-index: 10;
+	height: 27px;
+}
+
+#logotext a {
+	height: 27px;
+	width: 283px;
+	background-image:url(images/logotext.png);
+}
+
+#navigation-container {
+	background: url(images/menubg.jpg);
+	display: block;
+	width: 100%;
+	height: 56px;
+}
+#navigation-container .wrap {
+	max-width: 1000px;
+	position: relative;
+	margin: 0px auto;
+}
+
+#navigation-button {
+	display: none;
+	background: url(images/mobile-nav.png) center center no-repeat;
+	width: 56px;
+	height: 56px;
+	float: right;
+	cursor: pointer;
+	margin-right: 10px;
+	border-left: solid 1px #B0E45C;
+	border-right: solid 1px #688D30;
+}
+
+#navigation {
+	float: right;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	height: 56px;
+	border-left: solid 1px #688D30;
+}
+
+#navigation li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+#navigation li a {
+	color: #FFF;
+	font: 600 20px "chaparral-pro", serif;
+	line-height: 24px;
+	border-left: solid 1px #B0E45C;
+	border-right: solid 1px #688D30;
+	padding: 16px 12px;
+	display: block;
+}
+
+#navigation li a:hover {
+	background: #698F30;
+	color: #590902;
+	border-left: solid 1px #698F30;
+	border-right: solid 1px #698F30;
+}
+
+/* ------------END HEADER AND NAV -------------*/
+
+
+/* ------------BEGIN SUB FOOTER & FOOTER -------------*/
+
+.subfooter {
+	background-color: #698F30;
+	overflow: hidden;
+	color: #F3F1E0;
+}
+
+.subfooter .sans {
+	font: bold .75em facitweb-1, facitweb-2, sans-serif;
+}
+
+.subfooter .topspace {
+	margin-top: 17px;
+}
+
+.subfooter .wrap {
+	margin: 0 auto;
+    max-width: 1000px;
+    width: 100%;
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.subfooter .quarter p {
+	margin-bottom: 0;
+	font-size: 20px;
+	font-size: 1em;
+	line-height: 1.25em;
+}
+
+.footer {
+	background-color: #4C7224;
+}
+
+.footer .wrap {
+	margin: 0 auto;
+    width: 100%;
+    max-width: 1000px;
+	color: #F3F1E0;
+	text-align: center;
+	padding: 9px 10px;
+	font-size: .5em;
+	line-height: .75em;
+}
+
+.givingfirst a {
+    width: 72px;
+    height: 72px;
+    background-image: url(images/donateicon.png);
+    display: block;
+}
+
+.facebook a {
+    width: 72px;
+    height: 72px;
+    background-image: url(images/f_logo.png);
+    display: block;
+}
+
+.background-image {
+    background-color: transparent;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+}
+
+.footer-link {
+	color: #F3F1E0;
+	text-decoration: underline;
+}
+
+.footer-link:hover {
+	color: #EBE8CB;
+}
+
+/* ------------END SUBFOOTER & FOOTER -------------*/
+
+
+
+/* ------------BEGIN ABOUT US STYLES -------------*/
+
+.boardImageContainer {
+	float: left;
+	margin: 0 25px 0 0; 
+}
+
+/* ------------END ABOUT US STYLES -------------*/
+
+/* ------------BEGIN DONATE STYLES -------------*/
+
+.donate-group {
+	border-bottom: solid 1px #CCC;
+	margin-bottom: 18px;	
+}
+
+.imgdonate {
+	border: solid 5px #EBE8CB;
+	margin: 0 25px 10px 0;
+	float: left;
+}	
+
+.donatenow {
+	width: 134px;
+	height: 36px;
+	float: right;
+}
+
+.donatenow a {
+	width: 134px;
+	height: 36px;
+	background-image:url(images/donate.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+}
+
+.donatenow a:hover {
+	background-position: 0 -36px;
+}
+
+
+/* ------------END DONATE STYLES -------------*/
+
+
+/* ------------BEGIN GET HELP STYLES -------------*/
+
+
+
+#subnavcontainer {
+	position: relative;
+}
+
+#subnav {
+	width: 400px;
+	position: absolute;
+	top: 0px;
+	right: 25px;
+}
+
+#subnav ul {
+	float: right;
+	padding: 15px 0 15px 0;
+}
+
+#subnav li {
+	padding: 0 0 0 25px;
+	float: left;
+	font: normal .5em Georgia, "Times New Roman", Times, serif;
+	list-style: none;
+}
+
+.type-of-help {
+	position: relative;
+	float: left;
+	margin-top: 18px;
+	margin-bottom: 36px;
+	padding: 18px 24px;
+	background-color: #EBE8CB;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+.image-link {
+	border: solid 5px #FFF;
+	background-color: #F3F1E0;
+	margin: 0 auto 18px;
+	display: block;
+	padding: 10px 0;
+}
+
+.image-link:hover {
+	border: solid 5px #E34030;
+}
+
+.image-link img {
+	margin: 0 auto;
+	max-width: 80%;
+	display: block;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #EE5F00;
+	color: #EBE8CB;
+	padding: 5px 0px 5px 15px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	font-family: "myriad-pro",sans-serif;
+	line-height: 20px;
+	float: right;
+}
+
+.btn span {
+	display: inline-block;
+    vertical-align: middle;
+}
+
+.btn .link-arrow {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 2px 6px 2px 10px;
+}
+
+.btn:hover {
+	background-color: #FD6C0B;
+	color: #EBE8CB;
+}
+
+.btn2 {
+	display: inline-block;
+	padding: 5px 0px 5px 15px;
+	float: right;
+}
+
+.learnmore {
+	width: 134px;
+	height: 36px;
+	float: right;
+}
+
+.learnmore a {
+	background-color: transparent;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	display: block;
+	overflow: hidden;
+	text-indent: -9999px;
+	width: 134px;
+	height: 36px;
+	background-image: url(images/more.png);
+}
+
+.learnmore a:hover {
+	background-position: 0 -36px;
+}
+
+
+
+/* ------------END GET HELP STYLES -------------*/
+
+/* ------------BEGIN FREE CLASSES STYLES -------------*/
+
+/*.classes-group {
+	padding: 18px 10px 0 10px;
+	background-color: #FFF;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	display: block;
+}*/
+
+.card.classes-group {
+	padding: 18px 12px 0;
+}
+
+.classes-group h4 {
+	margin-bottom: 10px;
+}
+
+.classes-group ul {
+	padding: 0 0 18px 0;
+}
+.classes-group li {
+	list-style: disc;
+	color: #39651A;
+	list-style-position: outside;
+	margin-left: 15px;
+	font-size: .875em; /* 14px / 16px = .875em */
+	line-height: 1.2857em; /* 14px * 1.2em = 18px */
+	margin-bottom: 0;
+}
+.classes-group li {
+	color: #000;
+}
+
+/* ------------END FREE CLASSES STYLES -------------*/
+
+
+
+/* ------------BEGIN FREE SUPPLIES STYLES -------------*/
+
+.rounded {
+    padding: 13px 10px;
+    margin: 0 0 18px 0;
+    background-color: #FFF;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+}
+
+/* ------------END FREE SUPPLIES STYLES -------------*/
+
+
+
+
+/* ------------BEGIN RESROUCE STYLES -------------*/
+
+.resource-name {
+	font-size: 20px;	
+}
+
+/* ------------END RESROUCE STYLES -------------*/
+
+
+
+/* ------------BEGIN HOME PAGE STYLES -------------*/
+
+.homepage-container {
+    background-color: #EBE8CB;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.nivoSlider {
+	margin-bottom: 20px;
+}
+
+/* ------------END HOME PAGE STYLES -------------*/
+
+/* ------------BEGIN PARTNER STYLES -------------*/
+
+.business-logo {
+	width: 100%;
+	margin-bottom: 9px;
+}
+
+/* ------------END PARTNER STYLES -------------*/
+
+.card {
+    position: relative;
+    display: block;
+    padding: 18px 25px;
+    background-color: #EBE8CB;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+}
+
+.card-with-btn {
+	/* padding-bottom: 58px; */
+}
+
+.card .btn {
+	position: absolute;
+    bottom: 18px;
+    right: 25px;
+    float: none;
+}
+
+/* ------------BEGIN RESPONSIVE STYLES -------------*/
+
+@media screen and (min-width: 651px) {
+	#navigation {
+		display: block!important;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	#navigation li a {
+		color: #FFF;
+		font: 700 16px "chaparral-pro", serif;
+		line-height: 24px;
+	}
+
+	.subfooter .quarter, #classeslist .quarter {
+		width: 50%;
+		margin-bottom: 18px;
+	}
+	
+	#classeslist .quarter:nth-child(odd) {
+		clear: both;
+	}
+	
+	.quarter, .third, .two-thirds, .half {
+		width: 100%;
+	}
+	
+	.column-padding {
+		padding-right: 0;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	#navigation li a{
+		font: 700 12px "chaparral-pro", serif;
+		line-height: 24px;
+	}
+	
+	
+}
+
+@media (min-width: 651px) {
+	.card-deck {
+	    display: table;
+	    table-layout: fixed;
+	    border-spacing: 12px 0;
+	    margin-left: -10px;
+	    margin-right: -10px;
+	}
+	
+	.card-deck .card {
+	    display: table-cell;
+	    width: 1%;
+	    vertical-align: top;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	
+	p, a, ul, ol, li {
+		font-size: 18px;
+		line-height: 26px;
+		margin-bottom: 18px;
+	}
+	
+	h1 {
+		font-size: 32px;
+		line-height: 38px;
+		margin-bottom: 26px;
+	}
+	h2 {
+		font-size: 32px;
+		line-height: 38px;
+	}
+
+	h3 {
+		font-size: 20px;
+		line-height: 32px;
+	}
+	
+	a h2 {
+		margin-top: 26px;
+		padding-top: 26px;
+	}
+	
+	#navigation-button {
+		display: block;
+	}
+	
+	#navigation {
+		position: relative;
+		top: 0;
+		width: 100%;
+		/*display: block!important; /*Uncomment to work on mobile nav*/
+		background: #191A18;
+		display: none;
+		z-index: 50;
+		height: auto;
+		border-left: none;
+	}
+
+	#navigation li {
+		width: 100%;
+		float: none;
+		border-bottom: solid 1px #FFF;
+	}
+
+	#navigation li a {
+		color: #FFF;
+		font: 700 16px "chaparral-pro", serif;
+		line-height: 24px;
+		font-size: 12px;
+		text-align: center;
+		margin: 0;
+		border-left: none;
+		border-right: none;
+	}
+	
+	#navigation li a:hover {
+	}
+	
+	.subfooter .quarter, #classeslist .quarter {
+		width: 100%;
+	}
+	
+	.img-centered {
+		max-width: 100%;
+	    margin: 0 auto 18px;
+	    display: block;
+	}
+}
+
+@media screen and (max-width: 410px) {
+	#logotext {
+		display: none!important;
+	}
+}
+
+
+/* ------------END RESPONSIVE STYLES -------------*/
