@@ -43,8 +43,6 @@
 					<p class="givingfirst background-image"><a href="https://secure.egsnetwork.com/donate/D4B7F94476E54D0">Donate</a></p>
 					
 					<p class="psubfooter">Donate to CFLC.</p>
-					
-					<p class="sans topspace"><a class="footer-link" href="/cflc/our-partners">OUR PARTNERS</a></p>
 			
 				</div><!-- End .quarter -->
 			
