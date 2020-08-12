@@ -4,7 +4,7 @@
 
 	<h1 class="image-title">
 
-	<img src="<?php bloginfo( 'template_url' ); ?>/images/journal.png" alt="Journal">
+	<?php /*<img src="<?php bloginfo( 'template_url' ); ?>/images/journal.png" alt="Journal">*/ ?>
 	
 	</h1>
  
